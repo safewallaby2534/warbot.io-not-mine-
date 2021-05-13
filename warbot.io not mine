@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en-us" style="width:100%; height:100%;">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/cdn-cgi/apps/head/gPEsvHmJEvGBduynmvoUwqyP0rA.js"></script><script>
+if(/Android|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {self.location="/mobile/";}
+if(/MSIE|Trident/i.test(navigator.userAgent)) {self.location="msie.html";}
+// 아래 Build 폴더 2군데 고쳐야 함. 
+</script>
+<script src="Build122/UnityLoader.js?time=20210107"></script>
+<script async src="//api.adinplay.com/libs/aiptag/pub/WRB/warbot.io/tag.min.js"></script>
+<meta name="description" content="Fierce Battle of Mini Robot! - WARBOT.IO is a real-time online Robot action game which allows you to fight against players around the globe. Now available on desktop browsers and mobile app. " />
+<meta name="ketwords" content="warbot,io,iogame,online,multiplay,game,webgame,html5,action,tps,robot,webgl,워봇아이오,워봇,신선한,참신한,게임">
+<meta name="author" content="Wondersquad Inc.">
+<meta property="fb:app_id" content="311067389279694" />
+<meta property="og:title" content="warbot.io - iOS,Android,Web" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="warbotio.jpg" />
+<meta property="og:url" content="https://warbot.io" />
+<meta property="og:description" content="Fierce Battle of Mini Robot!" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@warbotio" />
+<meta name="twitter:title" content="warbot.io - iOS,Android,Web">
+<meta name="twitter:description" content="Fierce Battle of Mini Robot!">
+<meta name="twitter:image" content="watbotio.jpg">
+<title>warbot.io</title>
+<style type="text/css">
+html,body,div,canvas{margin:0;padding:0;}
+html,body{width:100%;height:100%;font-family:Lucida Console,Sans-serif,Arial;color:#667;}
+.template-wrap{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+.template-wrap canvas{position:relative;z-index:9;}
+.fullscreen{float:right;position:relative;z-index:10;}
+.s_top{position:relative;top:0;right:0;padding:0;margin:5px;width:260px;height:21px;border:none;}
+.s_box{position:fixed;bottom:0;left:0;right:0;margin:0px auto;height:14px;width:400px;border:none;}
+.l_box{position:fixed;bottom:0;left:0;margin:0 auto;height:72px;width:200px;border:none;}
+.r_box{position:fixed;bottom:0;right:0;margin:0px auto; height:14px;width:100px;border:none;}
+.logobox {position:absolute; top: 50%; left: 50%; padding: 1px; height:120px;width:620px;border:none; -moz-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);text-align: center; }
+a:link,a:active,a:visited{text-decoration:none;color:#9bf;}
+a:hover{text-decoration:underline;color:#acf;}
+#footer{margin:auto;padding:5px;text-align:center;font-size:9pt;}
+#moreio{margin:auto;padding:5px;text-align:center;font-size:9pt;}
+#ratinginfo{margin:auto;padding:5px;text-align:left;}
+#loading {}
+body.template{}
+.template .template-wrap{}
+.template .template-wrap canvas{}
+</style>
+<script>
+
+!function(a,b){"object"==typeof module&&module.exports?module.exports=b():"function"==typeof define&&define.amd?define(b):a.Spinner=b()}(this,function(){"use strict";function a(a,b){var c,d=document.createElement(a||"div");for(c in b)d[c]=b[c];return d}function b(a){for(var b=1,c=arguments.length;c>b;b++)a.appendChild(arguments[b]);return a}function c(a,b,c,d){var e=["opacity",b,~~(100*a),c,d].join("-"),f=.01+c/d*100,g=Math.max(1-(1-a)/b*(100-f),a),h=j.substring(0,j.indexOf("Animation")).toLowerCase(),i=h&&"-"+h+"-"||"";return m[e]||(k.insertRule("@"+i+"keyframes "+e+"{0%{opacity:"+g+"}"+f+"%{opacity:"+a+"}"+(f+.01)+"%{opacity:1}"+(f+b)%100+"%{opacity:"+a+"}100%{opacity:"+g+"}}",k.cssRules.length),m[e]=1),e}function d(a,b){var c,d,e=a.style;if(b=b.charAt(0).toUpperCase()+b.slice(1),void 0!==e[b])return b;for(d=0;d<l.length;d++)if(c=l[d]+b,void 0!==e[c])return c}function e(a,b){for(var c in b)a.style[d(a,c)||c]=b[c];return a}function f(a){for(var b=1;b<arguments.length;b++){var c=arguments[b];for(var d in c)void 0===a[d]&&(a[d]=c[d])}return a}function g(a,b){return"string"==typeof a?a:a[b%a.length]}function h(a){this.opts=f(a||{},h.defaults,n)}function i(){function c(b,c){return a("<"+b+' xmlns="urn:schemas-microsoft.com:vml" class="spin-vml">',c)}k.addRule(".spin-vml","behavior:url(#default#VML)"),h.prototype.lines=function(a,d){function f(){return e(c("group",{coordsize:k+" "+k,coordorigin:-j+" "+-j}),{width:k,height:k})}function h(a,h,i){b(m,b(e(f(),{rotation:360/d.lines*a+"deg",left:~~h}),b(e(c("roundrect",{arcsize:d.corners}),{width:j,height:d.scale*d.width,left:d.scale*d.radius,top:-d.scale*d.width>>1,filter:i}),c("fill",{color:g(d.color,a),opacity:d.opacity}),c("stroke",{opacity:0}))))}var i,j=d.scale*(d.length+d.width),k=2*d.scale*j,l=-(d.width+d.length)*d.scale*2+"px",m=e(f(),{position:"absolute",top:l,left:l});if(d.shadow)for(i=1;i<=d.lines;i++)h(i,-2,"progid:DXImageTransform.Microsoft.Blur(pixelradius=2,makeshadow=1,shadowopacity=.3)");for(i=1;i<=d.lines;i++)h(i);return b(a,m)},h.prototype.opacity=function(a,b,c,d){var e=a.firstChild;d=d.shadow&&d.lines||0,e&&b+d<e.childNodes.length&&(e=e.childNodes[b+d],e=e&&e.firstChild,e=e&&e.firstChild,e&&(e.opacity=c))}}var j,k,l=["webkit","Moz","ms","O"],m={},n={lines:12,length:7,width:5,radius:14,scale:1,corners:1,color:"#baa",opacity:.25,rotate:0,direction:1,speed:1,trail:100,fps:20,zIndex:2e9,className:"spinner",top:"60%",left:"50%",shadow:1,hwaccel:!1,position:"absolute"};if(h.defaults={},f(h.prototype,{spin:function(b){this.stop();var c=this,d=c.opts,f=c.el=a(null,{className:d.className});if(e(f,{position:d.position,width:0,zIndex:d.zIndex,left:d.left,top:d.top}),b&&b.insertBefore(f,b.firstChild||null),f.setAttribute("role","progressbar"),c.lines(f,c.opts),!j){var g,h=0,i=(d.lines-1)*(1-d.direction)/2,k=d.fps,l=k/d.speed,m=(1-d.opacity)/(l*d.trail/100),n=l/d.lines;!function o(){h++;for(var a=0;a<d.lines;a++)g=Math.max(1-(h+(d.lines-a)*n)%l*m,d.opacity),c.opacity(f,a*d.direction+i,g,d);c.timeout=c.el&&setTimeout(o,~~(1e3/k))}()}return c},stop:function(){var a=this.el;return a&&(clearTimeout(this.timeout),a.parentNode&&a.parentNode.removeChild(a),this.el=void 0),this},lines:function(d,f){function h(b,c){return e(a(),{position:"absolute",width:f.scale*(f.length+f.width)+"px",height:f.scale*f.width+"px",background:b,boxShadow:c,transformOrigin:"left",transform:"rotate("+~~(360/f.lines*k+f.rotate)+"deg) translate("+f.scale*f.radius+"px,0)",borderRadius:(f.corners*f.scale*f.width>>1)+"px"})}for(var i,k=0,l=(f.lines-1)*(1-f.direction)/2;k<f.lines;k++)i=e(a(),{position:"absolute",top:1+~(f.scale*f.width/2)+"px",transform:f.hwaccel?"translate3d(0,0,0)":"",opacity:f.opacity,animation:j&&c(f.opacity,f.trail,l+k*f.direction,f.lines)+" "+1/f.speed+"s linear infinite"}),f.shadow&&b(i,e(h("#000","0 0 4px #000"),{top:"2px"})),b(d,b(i,h(g(f.color,k),"0 0 1px rgba(0,0,0,.1)")));return d},opacity:function(a,b,c){b<a.childNodes.length&&(a.childNodes[b].style.opacity=c)}}),"undefined"!=typeof document){k=function(){var c=a("style",{type:"text/css"});return b(document.getElementsByTagName("head")[0],c),c.sheet||c.styleSheet}();var o=e(a("group"),{behavior:"url(#default#VML)"});!d(o,"transform")&&o.adj?i():j=d(o,"animation")}return h});
+
+var g_lang = "";
+var g_moreio = "inline";
+
+if (navigator.appName=="Netscape")        
+     g_lang = navigator.language;
+else g_lang = navigator.userLanguage;
+g_lang = g_lang.substr(0,2);
+
+  // adinplay init
+  window.aiptag = window.aiptag || {cmd: []};
+  aiptag.cmd.display = aiptag.cmd.display || [];
+  aiptag.cmd.player = aiptag.cmd.player || [];
+  //CMP tool settings
+  aiptag.cmp = {
+    show: true,
+    position: "centered",  //centered, bottom
+    button: true,
+    buttonText: "Privacy settings",
+    buttonPosition: "bottom-left" //bottom-left, bottom-right, top-left, top-right
+  }
+
+  aiptag.cmd.player.push(function() {
+    adplayer = new aipPlayer({
+      AD_WIDTH: 960,
+      AD_HEIGHT: 540,
+      AD_FULLSCREEN: true,
+      AD_CENTERPLAYER: false,
+      LOADING_TEXT: 'loading advertisement',
+      PREROLL_ELEM: function(){return document.getElementById('preroll')},
+      AIP_COMPLETE: function ()  { gameInstance.SendMessage('GameMain', 'ShowAdsComplete'); },
+      AIP_REMOVE: function ()  {}
+    });
+  });
+
+
+function updatesize() {
+  var w = document.body.clientWidth;
+  var h = document.body.clientHeight;
+  var w0 = 960/2;
+  var h0 = 600/2;
+  var h1 = parseInt(w * h0 / w0);
+  var w2 = parseInt(h * w0 / h0);
+  var rate_disp = 'none';  
+  var container = document.getElementById("gameContainer")
+  if (h1 <= h && w > w0){
+    container.style.width = w + 'px';
+    container.style.height = h1 + 'px';
+    rate_disp = 'inline';
+  }
+  else if (h > h0 && w2 <= w){
+    container.style.width = w2 + 'px';
+    container.style.height = h + 'px';
+  }
+  else{
+    container.style.width = w0 + 'px';
+    container.style.height = h0 + 'px';
+  }
+  if ( g_lang != "ko" )
+    rate_disp = 'none';  
+
+  var rateinfo = document.getElementById("rateinfo");
+  if (rateinfo)
+    rateinfo.style.display = rate_disp;
+
+  var moreio = document.getElementById("moreio");
+  if (moreio)
+    moreio.style.display = g_moreio;
+  
+  var canvas = document.getElementById("#canvas");
+  if (canvas != null){
+    canvas.style.width = container.style.width;
+    canvas.style.height = container.style.height;
+  } 
+}
+
+
+
+function popup(url, winName, windWidth, winHeight){
+  var x = (screen.width - windWidth) / 2;
+  var y = (screen.height - winHeight) / 2;
+  return window.open(url, winName, "toolbar=0,menubar=0,scrollbars=no,resizable=no,left="+ x +",top="+ y +",width="+ windWidth +",height="+ winHeight);
+}
+
+function checkUrlParams() {
+    var params = {};
+    window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
+    if (params.language)
+      g_moreio = "none";
+} 
+
+var spinner = null; 
+
+function UnityInitialization(){
+//console.log("GameInitialization");
+  var loading = document.getElementById("loading");
+  if (loading)
+      loading.style.display = 'none';
+
+  if (spinner) spinner.stop();
+}
+
+function UnityProgress(gameInstance, progress) {
+  if (!gameInstance.Module)
+    return;
+  //console.log("progress="+ progress); // 0 ~ 1
+  if ( !spinner ) {
+    var target  = document.getElementById('spinicon');
+    if ( target ) {
+      spinner = new Spinner().spin();
+      target.appendChild(spinner.el);
+    }    
+  }
+
+}
+
+var advisible = 0;
+var state = '';
+function UnityEvent(evt) {
+  if (state == "GameResult" && advisible == 1)
+  {
+    document.getElementById('warbot-io_300x250').style.display = 'none';
+    advisible = -1;
+  }
+  if (evt == "GameResult")
+  {
+    if (advisible==0)
+      aiptag.cmd.display.push(function() { aipDisplayTag.display('warbot-io_300x250'); });
+    else
+      aiptag.cmd.display.push(function() { aipDisplayTag.refresh('warbot-io_300x250'); });
+    advisible = 1;
+    document.getElementById('warbot-io_300x250').style.display = 'block';
+    console.log("aipDisplayTag.display");
+  }
+  if (evt == "ShowAds")
+  {
+    if (typeof adplayer !== 'undefined' ){
+      aiptag.cmd.player.push(function() { adplayer.startPreRoll(); });
+    } else {
+      console.log("Ad Could not be loaded, please turn-off your adblockers!");
+    }
+  }
+  state = evt;
+  console.log("Event:" + evt);
+}
+
+  checkUrlParams();
+
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build122/webgl.json", {onProgress: UnityProgress,
+    Module: { TOTAL_MEMORY: 568435456, onRuntimeInitialized: UnityInitialization, securemode: window.location.protocol == 'https:' ? 1:0 }});
+
+
+</script>
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '282777432151950'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=282777432151950&ev=PageView&noscript=1"
+/></noscript>
+</head>
+<body class="template" onresize="updatesize()" bgcolor="#1a1a1a" style="margin: 0px; padding: 0px; width: 100%; height:100%; overflow:hidden" valign="center" align="center" oncontextmenu="return false;">
+<!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+<section class="l_box" id="rateinfo">
+<a href="#"><img src="img/rate_info.png" onclick="popup('rating_info.html','rating info',520,400);" /></a>
+</section>
+<section class="s_box" id="footer">
+<a href="https://wondersquad.com" target="_blank">Contact</a> |
+<a href="#" onclick="popup('/privacy/','Privacy Policy', 1024, 600);">Privacy</a> |
+<a href="https://www.facebook.com/warbotio" target="_blank">Community</a> |
+<a href="https://www.youtube.com/results?search_query=warbot.io" target="_blank">Videos</a> |
+<a href="#" onclick="popup('/updatelog.html', 'Update Log', 1024, 600);">v1.2.2 +</a>
+</section>
+<section class="r_box" id="moreio">
+<a href="https://bit.ly/iogamesspace" target="_blank">More io games</a>
+</section>
+<section class="template-wrap clear">
+<div id="gameContainer" style="margin: 0px; padding: 0px;"></div>
+<script>updatesize()</script>
+</section>
+<section class="s_top">
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fwarbotio%2F&width=83&layout=button_count&action=like&size=small&show_faces=false&share=false&height=20&appId=311067389279694" width="98" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwarbot.io&layout=button&size=small&mobile_iframe=false&appId=311067389279694&width=92&height=20" width="75" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><iframe src="twitter.html" width="70" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</section>
+<section class="logobox" id="loading">
+<img src="/img/logo.png"><br>
+<img src="/img/pbar.gif"><br>
+</section>
+<div id="warbot-io_300x250" style="position: absolute; left:0px; bottom:0px;"></div>
+<div id="preroll" style="position: absolute; left:0px; top:0px;"></div>
+<div id="spinicon"></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-86883583-3', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
